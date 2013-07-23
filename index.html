@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>tERROR: Error Tracking service</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://github.com/bartaz/impress.js/blob/master/css/impress-demo.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup/code/bootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup/code/social-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup/code/jquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup/code/bootstrap.js"></script>
@@ -60,6 +61,13 @@
       }
 
       /* Video pitch and Action */
+      .artwork {
+        width: 480px;
+        height: 300px;
+        text-align: center;
+        border-style: dashed;
+        border-width: 1px;
+      }
       .pitch {
         padding: 2.5% 0%;
       }
@@ -131,19 +139,32 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>
+            <span class="icon-stack">
+              <i class="icon-bug icon-spin"></i>
+              <i class="icon-ban-circle icon-stack-base text-error"></i>
+            </span>
+            tERROR: Error Tracking service
+          </h1>
         </div>
       </div>
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead"><i class="icon-bug icon-rotate-90"></i> End the reign of terror that bugs have over your developers <i class="icon-bug icon-rotate-270"></i></p>
         </div>
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <div id="impress" class="artwork" data-x="0" data-y="0">
+            <h1>
+              <span class="icon-stack icon-4x">
+                <i class="icon-bug"></i>
+                <i class="icon-ban-circle icon-stack-base text-error"></i>
+              </span>
+            </h1>
+          </div>
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
@@ -153,17 +174,17 @@
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries.  -->
                 <div class="linediv-l">
-                  <h3>1000</h3> <p>backers</p>
+                  <h3>1</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6,000</h3> <p>of $10,000</p>
+                  <h3>$1</h3> <p>of $100,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                  <h3>10</h3> <p>days left</p>
+                  <h3>45</h3> <p>days left</p>
                 </div>
               </div>
             </div>
@@ -172,8 +193,8 @@
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="bar bar-success" style="width: 1%;"></div>
+              <div class="bar bar-warning" style="width: 99%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
@@ -196,22 +217,34 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <div id="impress" class="artwork" data-x="0" data-y="0">
+            <h1>
+              <i class="icon-bug icon-3x"></i> take <i class="icon-time icon-3x"></i>
+              <br><br>
+              <i class="icon-time icon-3x"></i> is <i class="icon-usd icon-3x"></i>
+            </h1>
+          </div>
         </div>
         <div class="span5 copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in nibh eu eros laoreet sollicitudin ac a tellus. Vivamus ultrices nisl in mi sagittis congue. Phasellus commodo, nisi in vestibulum tempor, tellus odio vehicula nibh, sed mollis ante elit et mauris. Aliquam aliquam sagittis mauris, nec convallis eros aliquet lacinia. Sed pretium volutpat felis, vel blandit nulla faucibus in. Phasellus eget felis et lorem gravida condimentum non ut dolor. Quisque ante odio, lacinia ornare arcu eget, adipiscing consequat sem. Nullam bibendum mauris in sagittis viverra. Integer pellentesque nisl non purus luctus, vitae volutpat elit dapibus.
+            All software developers have to deal with errors in their code.  The process of finding, fixing, and verifying bugs can be very time consuming.  Of course, we all know that time means money.  That's where tERROR can help.  The tERROR service can reduce the time developers have to spend tracking and fixing errors.  By automating many of the processes involved in error tracking, tERROR allows developers to spend more of their time producing software.  tERROR integrates many necessary developer tools such as revision control, bug tracking, build systems, and testing to make sure that developers can get the most out of the available tools.  
           </p>
         </div>
       </div>
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            Sed non suscipit urna, vitae adipiscing augue. Pellentesque et tempus lectus, non molestie tellus. Nam interdum turpis sed feugiat tristique. Fusce aliquam ipsum facilisis diam viverra lacinia. Maecenas gravida, felis quis scelerisque sodales, massa orci rutrum augue, sed dignissim nisi erat et leo. Ut lacinia, leo vitae sollicitudin molestie, tortor justo laoreet urna, non imperdiet ipsum ante sed tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue lacus et neque ornare adipiscing. Vestibulum sem arcu, ultricies et ultrices vitae, eleifend non odio. Nunc odio elit, sodales at luctus vitae, lobortis sed elit. Sed ultrices ornare posuere.
+            We have realized that it is very rare to have a truly unique error.  That means that most developers spend time fixing problems that have already solved in another piece of software.  Wouldn't it be nice if there was a way that developers could stop reinventing the wheel when it came to fixing bugs?  That's why tERROR includes a statistic analysis module that can suggest known solutions to errors that have been fixed in the past.  There are several tERROR subscription tiers available.  The Community subscription level stores all known solutions in a public database.  Private subscribers can choose to keep solutions annonymous.  Corporate subscribers have their own private database.  
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <div id="impress" class="artwork" data-x="0" data-y="0">
+            <h1>
+              Before: <i class="icon-frown icon-3x"></i>
+              <br><br>
+              After: <i class="icon-smile icon-3x"></i>
+            </h1>
+          </div>
         </div>
       </div>
 
@@ -225,24 +258,24 @@
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                  What does FAQ stand for?
+                  What does tERROR stand for?
                 </a>
               </div>
               <div id="collapseOne" class="accordion-body collapse">
                 <div class="accordion-inner">
-                  Frequently Asked Question.
+                  tERROR stands for Error Tracker.
                 </div>
               </div>
             </div>
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                  What's a Frequently Asked Question?
+                  What types of solutions can tERROR detect?
                 </a>
               </div>
               <div id="collapseTwo" class="accordion-body collapse">
                 <div class="accordion-inner">
-                  A question which is commonly asked by users.
+                  tERROR excels at detecting solutions for compiler errors and run-time exceptions.  
                 </div>
               </div>
             </div>
@@ -251,13 +284,14 @@
 
       </div>
 
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
-          <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the page.</p>
+          <p>All rights reserved.</p>
         </div>
       </div>
     </div>
+
+    <script src="https://github.com/bartaz/impress.js/blob/master/js/impress.js"></script>
+    <script>impress().init();</script>
   </body>
 </html>
